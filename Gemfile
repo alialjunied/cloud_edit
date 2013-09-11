@@ -5,7 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 group :development, :test do
-  gem "sqlite3", "~> 1.3.7", :require => "sqlite3"
+  gem "sqlite3", "~> 1.3.8", :require => "sqlite3"
 end
 
 gem 'sass-rails', '4.0.0'
