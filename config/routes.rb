@@ -1,8 +1,8 @@
 CloudEdit::Application.routes.draw do
 
-  resources :documents
+  resources :document
 
-  root 'document#index'
+  root 'documents#index'
   get ':controller/:action/:id'
   get ':controller/:action/:id.:format'
 
