@@ -1,4 +1,11 @@
 CloudEdit::Application.routes.draw do
+  
+  resources :documents
+
+  root 'documents#index'
+  get ':controller/:action/:id'
+  get ':controller/:action/:id.:format'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +60,5 @@ CloudEdit::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end
