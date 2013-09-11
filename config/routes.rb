@@ -1,6 +1,6 @@
 CloudEdit::Application.routes.draw do
 
-  resources :document
+  resources :documents
 
   root 'document#index'
   get ':controller/:action/:id'
