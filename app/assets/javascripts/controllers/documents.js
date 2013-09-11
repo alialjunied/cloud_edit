@@ -22,7 +22,7 @@ App.Controllers.Documents = Backbone.Controller.extend({
         $.getJSON('/documents', function(data) {
             if(data) {
                 var documents = _(data).map(function(i) { return new Document(i); });
-                new App.Views.Index({ documents: documents });
+                new App.Views.Index({ documents: documents }); //instantiate app.views.index view with array of models
             } else {
                 new Error({ message: "Error loading documents." });
             }

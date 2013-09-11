@@ -5,3 +5,4 @@ var Document = Backbone.Model.extend({
       return base + (base.charAt(base.length - 1) == '/' ? '' : '/') + this.id;
     }
 });
+	
