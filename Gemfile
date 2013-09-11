@@ -8,6 +8,8 @@ group :development, :test do
   gem "sqlite3", "~> 1.3.8", :require => "sqlite3"
 end
 
+gem 'protected_attributes'
+gem 'devise', '3.0.0.rc'
 gem 'sass-rails', '4.0.0'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.0'
